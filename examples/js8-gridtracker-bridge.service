@@ -1,0 +1,10 @@
+[Unit]
+Description=JS8 GridTracker Bridge
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/YOURUSER/js8-gridtracker-bridge/js8_to_gridtracker_bridge.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
